@@ -1,0 +1,43 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.contact-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  color: #003366; /* Cool blue color */
+}
+
+.contact-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-container a {
+  color: #d62d20; /* Medicinal red color */
+  text-decoration: none;
+  display: inline-block; /* For proper alignment of icons and text */
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+.contact-container .fa-instagram {
+  font-size: 24px; /* Adjust size as needed */
+  margin-right: 8px;
+}
+
+/* Additional styles */
+/* ... */

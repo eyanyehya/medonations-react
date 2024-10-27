@@ -1,0 +1,61 @@
+/* General styles for navbar */
+.my-navbar {
+  transition: background-color 0.3s;
+  padding-top: 20px !important; /* Increased top padding, using !important to override other styles */
+  padding-bottom: 20px !important; /* Increased bottom padding, using !important to override other styles */
+}
+
+/* Styles when navbar is at the top (not scrolled) */
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+.navbar-transparent .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Styles when navbar is scrolled */
+.navbar-scrolled {
+  background-color: white !important;
+}
+
+.navbar-scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar link styles */
+.my-navbar .nav-link {
+  display: inline-block;
+  margin-right: 20px;
+  color: white; /* Default color for nav links */
+  text-decoration: none; /* Removes the underline */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change nav link color when navbar is scrolled */
+.navbar-scrolled .nav-link {
+  color: black; /* Text color for scrolled navbar */
+}
+
+/* Hide the navbar link's after-element */
+.my-navbar .nav-link::after {
+  display: none;
+}
+
+/* Style for navbar brand */
+.my-navbar .navbar-brand img {
+  transition: filter 0.3s;
+}
+
+/* Apply filter to navbar brand when scrolled if needed */
+.navbar-scrolled .navbar-brand img {
+  filter: none; /* Adjust or remove if not needed */
+}
+
+/* Apply Roboto font to the entire navbar */
+.my-navbar .nav-link {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}

@@ -1,0 +1,26 @@
+.coming-soon-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Choose a text color that contrasts well with your background */
+}
+
+.content {
+  max-width: 600px; /* Set a max-width for your content */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
+  border-radius: 10px; /* Optional: rounds the corners of the background */
+}
+
+.content h1 {
+  font-size: 4rem; /* Large text size for the 'Coming Soon' title */
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.25rem; /* Smaller text size for the description */
+}

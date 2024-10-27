@@ -1,0 +1,311 @@
+.home-container {
+  /* ... */
+}
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 10%;
+  background: #f9f9f9; /* Light background for feature section */
+}
+
+.feature-item {
+  flex-basis: 22%; /* Adjust the width of each feature item */
+  margin: 10px;
+  text-align: center;
+}
+
+.feature-icon {
+  max-width: 100px; /* Control the size of the icons */
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-section {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    flex-basis: 100%;
+  }
+
+  .feature-icon {
+    max-width: 80px; /* Smaller icons on mobile */
+  }
+}
+
+.donation-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #f9f9f9; /* You can change the background color as needed */
+}
+
+.donation-image {
+  max-width: 300px; /* Adjust the size as needed */
+  margin-right: 30px; /* Add some space between the image and the text */
+}
+
+.donation-content {
+  max-width: 600px; /* Set a max width for the text content */
+  text-align: left; /* Align the text to the left */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .donation-image-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donation-image {
+    margin: 0 auto 20px; /* Center the image on smaller screens */
+    max-width: 80%;
+  }
+
+  .donation-content {
+    max-width: 100%;
+  }
+}
+
+.who-are-we-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #fff; /* or any color that matches your design */
+  border-bottom: 2px solid #eaeaea; /* a subtle border under the section */
+}
+
+.who-are-we-content {
+  flex: 1;
+  padding-right: 20px; /* Add space between the text and the image */
+}
+
+.who-are-we-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.who-are-we-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.who-are-we-image {
+  flex-basis: 400px; /* Adjust the size as needed */
+}
+
+.who-are-we-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional for rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .who-are-we-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .who-are-we-content {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .who-are-we-image {
+    flex-basis: auto;
+  }
+
+  .who-are-we-image img {
+    max-width: 80%;
+    margin: 0 auto; /* Center the image */
+  }
+}
+
+.next-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #f8f8f8; /* Choose a color that fits the design */
+}
+
+.next-section-content {
+  flex: 1;
+  padding-left: 20px; /* Add space between the image and the text */
+}
+
+.next-section-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.next-section-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.next-section-image {
+  flex-basis: 400px; /* Adjust the size as needed */
+}
+
+.next-section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional for rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .next-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .next-section-content {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .next-section-image {
+    flex-basis: auto;
+  }
+
+  .next-section-image img {
+    max-width: 80%;
+    margin: 0 auto; /* Center the image */
+  }
+}
+
+.education-initiative-section {
+  padding: 50px 10%;
+  background-color: #e6f7ff; /* Light blue background for a fresh look */
+  text-align: center;
+}
+
+.education-initiative-card {
+  display: inline-block;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-initiative-card:hover {
+  transform: translateY(-10px);
+}
+
+.education-initiative-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.education-initiative-content {
+  padding: 20px;
+}
+
+.education-initiative-content h2 {
+  font-size: 1.8rem;
+  color: #0056b3; /* Dark blue for contrast */
+  margin-bottom: 15px;
+}
+
+.education-initiative-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .education-initiative-card {
+    width: 100%;
+  }
+}
+
+.medical-crisis-section {
+  padding: 50px 10%;
+  background-color: #ffebee; /* Light red for urgency */
+}
+
+.medical-crisis-header h2 {
+  color: #b71c1c; /* Dark red for impact */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.medical-crisis-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.steps-to-help {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.steps-to-help h3 {
+  font-size: 1.8rem;
+  color: #b71c1c;
+  margin-bottom: 20px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.step {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+  color: #b71c1c;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.step h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
