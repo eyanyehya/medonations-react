@@ -11,6 +11,7 @@ import MedicalDrives from "./pages/MedicalDrives";
 import Home from "./pages/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BlogDetail from "./pages/BlogDetail";
+import Donate from "./pages/Donate";
 
 const Layout = ({children}) => {
     const location = useLocation();
@@ -34,6 +35,7 @@ const App = () => {
                     <Route path="/blogs" element={<Blogs/>}/>
                     <Route path="/medical-drives" element={<MedicalDrives/>}/>
                     <Route path="/contact" element={<ContactUs/>}/>
+                    <Route path="/donate" element={<Donate/>}/>
                     <Route path="/blogs/:id" element={<BlogDetail/>}/>
                 </Routes>
             </Layout>

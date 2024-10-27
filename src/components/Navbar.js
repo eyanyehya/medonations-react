@@ -58,6 +58,9 @@ const MyNavbar = () => {
             <NavLink to="/medical-drives" className={`nav-link ${scrolled ? 'text-black' : 'text-white'}`} activeClassName="active">
               Medical Drives
             </NavLink>
+            <NavLink to="/donate" className={`nav-link`} activeClassName="active" style={{ color: 'gold' }}>
+              ⭐ Donate
+            </NavLink>
             <NavLink to="/contact" className={`nav-link ${scrolled ? 'text-black' : 'text-white'}`} activeClassName="active">
               Contact Us
             </NavLink>
